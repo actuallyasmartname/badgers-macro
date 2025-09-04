@@ -9,3 +9,5 @@ If applicable, set your ROBLOX:// protocol to UWP roblox by going to Default App
 <img width="609" height="640" alt="image" src="https://github.com/user-attachments/assets/d8fe0451-8b1d-48bb-81a7-f1dbae3b3eea" />
 
 Run joinFarm.py or use `start.bat` and the magic shall proceed (if it doesn't, which it might, open an issue)
+
+https://github.com/user-attachments/assets/86ecb0ce-e173-4012-b151-12ba7a60fdce
