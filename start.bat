@@ -1,0 +1,2 @@
+python joinFarm.py
+pause
