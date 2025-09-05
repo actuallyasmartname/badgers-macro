@@ -196,7 +196,7 @@ def process_sheet(sheetInfo):
 if __name__ == "__main__":
     with requests.Session() as session:
         spreadsheetInfo = load_sheet(SHEET_ID)
-        if len(spreadsheetInfo) > 0:
+        if len(spreadsheetInfo) > 0 and not USE_CSV:
             process_sheet(spreadsheetInfo)
         else:
             process_csv("ids_list.csv")
