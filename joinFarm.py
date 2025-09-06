@@ -101,7 +101,11 @@ def handle_game(universe_id, place_id):
         def spam_launcher():
             while not stop_event.is_set():
                 try:
-                    webbrowser.open(f"roblox://placeId={place_id}")
+                    url = f"roblox://placeId={place_id}"
+                    if "TERMUX_VERSION" in os.environ:
+                        os.system(f"xdg-open {url}")
+                    else:
+                        webbrowser.open(url)
                 except Exception:
                     pass
                 time.sleep(DELAY)
